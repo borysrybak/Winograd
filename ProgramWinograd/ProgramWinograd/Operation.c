@@ -2,28 +2,38 @@
 
 void ComputeMatrix(void)
 {
-	//Winograd();
-	//NumberOfSum();
-	//NumberOfProduct();
+	ComputeMatrixSimpleMethod();
+	ComputeMatrixWinogradMethod();
 
 	return;
 }
 
-int Sum(int A, int B)
+int ComputeMatrixSum(int A, int B)
 {
+	NumberOfSums++;
+
 	return A + B;
 }
 
-int Product(int A, int B)
+int ComputeMatrixProduct(int A, int B)
 {
+	NumberOfProducts++;
+
 	return A * B;
 }
 
-fptrOperation Select(char OperrationCode)
+fptrOperation Select(char OperationCode)
 {
-	switch (OperrationCode)
+	switch (OperationCode)
 	{
-		case '+': return Sum;
-		case '*': return Product;
+	case '+': return ComputeMatrixSum;
+	case '*': return ComputeMatrixProduct;
 	}
+}
+
+int Compute(char OperationCode, int A, int B)
+{
+	fptrOperation Operation = Select(OperationCode);
+
+	return Operation(A, B);
 }

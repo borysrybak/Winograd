@@ -79,15 +79,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Execution.c" />
-    <ClCompile Include="main.c" />
+    <ClCompile Include="Main.c" />
     <ClCompile Include="Operation.c" />
     <ClCompile Include="Read.c" />
-    <ClCompile Include="Reservation.c" />
+    <ClCompile Include="Allocation.c" />
+    <ClCompile Include="SimpleMethod.c" />
+    <ClCompile Include="View.c" />
+    <ClCompile Include="WinogradMethod.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FunctionPrototypes.h" />
     <ClInclude Include="SystemHeaders.h" />
     <ClInclude Include="Variables.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\MatrixA4.txt" />
+    <Text Include="..\..\..\MatrixB4.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

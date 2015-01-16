@@ -2,40 +2,57 @@
 
 void ReadMatrix(void)
 {
-	ReadA();
-	ReadB();
+	ReadMatrixSize();
+	ReadMatrixAElements();
+	ReadMatrixBElements();
 
 	return;
 }
 
-void ReadA(void)
+void ReadMatrixSize(void)
 {
-	int SizeOfA;
-	SizeOfA = 0;
-
 	printf("Podaj stopien Macierzy A: ");
-	scanf_s("%d", &SizeOfA);
+	scanf_s("%d", &SizeOfMatrix);
 
+	return;
+}
+
+void ReadMatrixAElements(void)
+{
 	int **ptrptrMatrixA;
 	printf("Podaj kolejne elementy Macierzy A:\n");
-	ptrptrMatrixA = ReserveA(SizeOfA);
+	ptrptrMatrixA = ArrayAllocation(SizeOfMatrix);
+
+	InputValue = 0;
+	for (int i = 0; i < SizeOfMatrix; i++)
+	{
+		for (int j = 0; j < SizeOfMatrix; j++)
+		{
+			scanf_s("%d", &InputValue);
+			ptrptrMatrixA[i][j] = InputValue;
+		}
+	}
 
 	ptrptrMatrixAB[0] = ptrptrMatrixA;
 
 	return;
 }
 
-void ReadB(void)
+void ReadMatrixBElements(void)
 {
-	int SizeOfB;
-	SizeOfB = 0;
-
-	printf("Podaj stopien Macierzy B: ");
-	scanf_s("%d", &SizeOfB);
-
 	int **ptrptrMatrixB;
 	printf("Podaj kolejne elementy Macierzy B:\n");
-	ptrptrMatrixB = ReserveB(SizeOfB);
+	ptrptrMatrixB = ArrayAllocation(SizeOfMatrix);
+
+	InputValue = 0;
+	for (int i = 0; i < SizeOfMatrix; i++)
+	{
+		for (int j = 0; j < SizeOfMatrix; j++)
+		{
+			scanf_s("%d", &InputValue);
+			ptrptrMatrixB[i][j] = InputValue;
+		}
+	}
 
 	ptrptrMatrixAB[1] = ptrptrMatrixB;
 

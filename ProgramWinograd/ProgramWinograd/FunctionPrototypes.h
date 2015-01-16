@@ -2,15 +2,23 @@ void Start(void);
 void Stop(void);
 
 void ReadMatrix(void);
-void ReadA(void);
-void ReadB(void);
+void ReadMatrixSize(void);
+void ReadMatrixAElements(void);
+void ReadMatrixBElements(void);
 
-int** ReserveA(int);
-int** ReserveB(int);
-void ReserveC(int);
+int **ArrayAllocation(int);
 
+typedef int(*fptrOperation)(int, int);
+fptrOperation Select(char);
+int Compute(char, int, int);
 void ComputeMatrix(void);
-typedef int (*fptrOperation)(int, int);
-int Sum(int, int);
-int Product(int, int);
-int Compute(fptrOperation, int, int);
+int ComputeMatrixSum(int, int);
+int ComputeMatrixProduct(int, int);
+
+void ComputeMatrixSimpleMethod(void);
+void ComputeMatrixWinogradMethod(void);
+
+void ViewMatrixResult(void);
+void ViewNumberOfProducts(void);
+void ViewNumberOfSums(void);
+void ViewExecutionTime(void);

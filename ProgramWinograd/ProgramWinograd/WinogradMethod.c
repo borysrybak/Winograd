@@ -1,9 +1,6 @@
 #include "SystemHeaders.h"
 
-void main(void)
+void ComputeMatrixWinogradMethod(void)
 {
-	Start();
-	Stop();
-
 	return;
 }

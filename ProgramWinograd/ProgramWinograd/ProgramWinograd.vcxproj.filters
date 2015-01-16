@@ -15,19 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Operation.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Read.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Reservation.c">
+    <ClCompile Include="Execution.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Execution.c">
+    <ClCompile Include="Main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Allocation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleMethod.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WinogradMethod.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="View.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,5 +50,13 @@
     <ClInclude Include="Variables.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\MatrixA4.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="..\..\..\MatrixB4.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
