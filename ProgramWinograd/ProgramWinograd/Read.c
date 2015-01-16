@@ -1,6 +1,6 @@
 #include "SystemHeaders.h"
 
-void ReadMatrix(int **ptrptrMatrixAB)
+void ReadMatrix(void)
 {
 	ReadA();
 	ReadB();

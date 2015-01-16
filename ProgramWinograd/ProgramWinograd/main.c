@@ -1,9 +1,9 @@
 #include "SystemHeaders.h"
 
-int main(void)
+void Main(void)
 {
 	Start();
+	Stop();
 
-	system("pause");
-	return 0;
+	return;
 }

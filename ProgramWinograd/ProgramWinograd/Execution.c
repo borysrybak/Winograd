@@ -2,8 +2,16 @@
 
 void Start(void)
 {
-	ReadMatrix(ptrptrMatrixAB);
-	ComputeMatrix(ptrptrMatrixAB);
+	ReadMatrix();
+	ComputeMatrix();
+
+	return;
+}
+
+void Stop(void)
+{
+	printf(".\n.\n.\nSTOP\n");
+	system("pause");
 
 	return;
 }

@@ -1,6 +1,7 @@
 void Start(void);
+void Stop(void);
 
-void ReadMatrix(int **);
+void ReadMatrix(void);
 void ReadA(void);
 void ReadB(void);
 
