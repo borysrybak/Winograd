@@ -1,10 +1,8 @@
-#include "SystemHeaders.h"
-
 void Start(void);
 
 void ReadMatrix(int **);
-int** ReadA(void);
-int** ReadB(void);
+void ReadA(void);
+void ReadB(void);
 
 int** ReserveA(int);
 int** ReserveB(int);

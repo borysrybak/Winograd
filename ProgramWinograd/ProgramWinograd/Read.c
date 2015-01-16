@@ -1,14 +1,14 @@
-#include "FunctionPrototypes.h"
+#include "SystemHeaders.h"
 
 void ReadMatrix(int **ptrptrMatrixAB)
 {
-	ptrptrMatrixAB[0] = ReadA();
-	ptrptrMatrixAB[1] = ReadB();
+	ReadA();
+	ReadB();
 
 	return;
 }
 
-int** ReadA(void)
+void ReadA(void)
 {
 	int SizeOfA;
 	SizeOfA = 0;
@@ -20,10 +20,12 @@ int** ReadA(void)
 	printf("Podaj kolejne elementy Macierzy A:\n");
 	ptrptrMatrixA = ReserveA(SizeOfA);
 
-	return ptrptrMatrixA;
+	ptrptrMatrixAB[0] = ptrptrMatrixA;
+
+	return;
 }
 
-int** ReadB(void)
+void ReadB(void)
 {
 	int SizeOfB;
 	SizeOfB = 0;
@@ -35,5 +37,7 @@ int** ReadB(void)
 	printf("Podaj kolejne elementy Macierzy B:\n");
 	ptrptrMatrixB = ReserveB(SizeOfB);
 
-	return ptrptrMatrixB;
+	ptrptrMatrixAB[1] = ptrptrMatrixB;
+
+	return;
 }

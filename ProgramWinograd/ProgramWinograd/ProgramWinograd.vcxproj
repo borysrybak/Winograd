@@ -87,6 +87,7 @@
   <ItemGroup>
     <ClInclude Include="FunctionPrototypes.h" />
     <ClInclude Include="SystemHeaders.h" />
+    <ClInclude Include="Variables.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

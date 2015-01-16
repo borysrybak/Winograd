@@ -1,9 +1,7 @@
-#include "FunctionPrototypes.h"
-#include "Variables.h"
+#include "SystemHeaders.h"
 
 void Start(void)
 {
-
 	ReadMatrix(ptrptrMatrixAB);
 	ComputeMatrix(ptrptrMatrixAB);
 
