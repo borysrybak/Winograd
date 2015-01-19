@@ -2,7 +2,7 @@
 
 void ComputeMatrix(void)
 {
-	ComputeMatrixSimpleMethod();
+	//ComputeMatrixSimpleMethod();
 	ComputeMatrixWinogradMethod();
 
 	return;
